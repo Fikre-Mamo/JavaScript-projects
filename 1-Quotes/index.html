@@ -2,21 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quotes</title>
   </head>
   <body>
-    <div id="container">
-      <header class="header">
-        <div class="quote-container">
-          <p class="quote"></p>
-          <p class="author"></p>
-          <a href="twitter">X</a>
-          <a href="next-quote">Next quote</a>
+    <div class="quote-container">
+        <div class="quote-text">
+          <img class="quote-icon" src="./src/assets/quotes-icon.svg" alt="a quote icon">
+          <span class="quote">Be the change that you wish to see in the world. </span>
         </div>
-      </header>
+        <div class="author-text">
+           <span class="author"> Mahatma Gandhi </span>
+        </div>
+        <div class="btn-container">
+          <button class="btn btn-logo" type="button"><ion-icon name="logo-x" title="tweet this!"></ion-icon></button>
+          <button class="btn btn-text" type="button">Next quote</button>
+        </div>
     </div>
+    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
